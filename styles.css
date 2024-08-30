@@ -1,0 +1,19 @@
+body {
+    color: #c0c0c0;
+}
+
+.btn-dark {
+  color: #c0c0c0;
+  background-color: black;
+}
+
+.btn-selected {
+  background-color: #444; /* Darker background to show it's selected */
+  border-color: #666; /* Change border color */
+  color: #fff; /* Text color */
+}
+
+.btn-selected:focus, .btn-selected:active {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Add glow effect */
+}
