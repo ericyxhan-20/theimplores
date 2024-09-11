@@ -1,5 +1,5 @@
 body {
-    color: #c0c0c0;
+  color: #c0c0c0;
 }
 
 .btn-dark {
@@ -16,4 +16,63 @@ body {
 .btn-selected:focus, .btn-selected:active {
   outline: none; /* Remove outline */
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Add glow effect */
+}
+
+.patreon-button {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+}
+
+.patreon-button:hover {
+  background-color: #c0c0c0;
+  border-color: #c0c0c0;
+  color: #000;
+}
+
+.icons.text-light {
+  display: inline-block;
+  line-height: 0; /* Removes extra spacing below the icons */
+}
+
+.icons.text-light i {
+  margin: 0; /* Ensures no extra margin around icons */
+  padding: 0; /* Ensures no extra padding around icons */
+  vertical-align: middle; /* Aligns icons vertically in the middle */
+}
+
+.icons.text-light i:hover {
+  color: #c0c0c0; /* Optional: change color on hover */
+}
+
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.album-art {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.release-title, .release-description {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .row {
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .album-art {
+      width: 100%;
+      height: auto;
+  }
+  .release-title {
+      font-size: 1.5rem;
+  }
+  .release-description {
+      font-size: 1rem;
+  }
 }
