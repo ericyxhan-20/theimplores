@@ -13,44 +13,106 @@
 </head>
 
 <body class="bg-black">
-  <div class="dropdown">
-    <button class="btn btn-selected btn-dark border dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false" style="width:100px;">
-        Home
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li><a class="dropdown-item active" href="#">New Release!</a></li>
-        <li><a class="dropdown-item" href="./index.html">Home</a></li>
-    </ul>
-  </div>
-  <h1 class="text-center text-gray-200">The Implores</h1>
-  <div class="container-fluid">
-    <div class="row mb-5">
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./albums.html">Albums</a>
-      </div>
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./news.html">Shows/Tour/News</a>
-      </div>
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./shop.html">Apparel/Merch Shop</a>
-      </div>
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./doodle-on-the-table.html">Doodle on the Table</a>
-      </div>
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./media.html">Photos/Video/Interviews</a>
-      </div>
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./contact.html">Contact</a>
-      </div>
-      <div class="col text-center">
-        <a class="btn btn-dark w-100 border" href="./faq.html">FAQ</a>
+  <div class="row align-items-center dropdown-navbar">
+    <div class="col-auto col-left container-fluid" style="width:10%;margin:0;">
+      <div class="dropdown navbar" style="margin-left:2%;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="dropdown" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="filter: brightness(0) invert(0.8);"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item active" href="#">Home</a></li>
+          <li><a class="dropdown-item" href="./albums.html">Music</a></li>
+          <li><a class="dropdown-item" href="./news.html">News</a></li>
+          <li><a class="dropdown-item" href="./shop.html">Apparel/Merch</a></li>
+          <li><a class="dropdown-item" href="./doodle-on-the-table.html">Doodle on the Table</a></li>
+          <li><a class="dropdown-item" href="./media.html">Photos/Video/Interviews</a></li>
+          <li><a class="dropdown-item" href="./contact.html">Contact</a></li>
+          <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+        </ul>
       </div>
     </div>
+  
+    <div class="col-auto col-center container-fluid" style="width:90%;padding-right:10%;margin-bottom:3%;">
+      <h1 class="text-center text-gray-200" style="margin:2% 0 0 0;">The Implores</h1>
+      <h2 class="text-center" style="font-size:1.5rem; margin:0;">Independent</h2>
+      <h3 class="text-center" style="font-size:1rem; font-weight:300; margin-bottom:1%">(Meaning no label)</h3>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="full-navbar">
+      <h1 class="text-center text-gray-200" style="margin:2% 0 0 0;">The Implores</h1>
+      <h2 class="text-center" style="font-size:1.5rem; margin:0;">Independent</h2>
+      <h3 class="text-center" style="font-size:1rem; font-weight:300; margin-bottom:1%">(Meaning no label)</h3>
+
+      <div class="row mb-5" style="margin-bottom:1rem !important;">
+        <div class="col text-center">
+          <a class="btn btn-selected btn-dark w-100 border" href="#">Home</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./albums.html">Music</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./news.html">News</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./shop.html">Apparel/Merch </a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./doodle-on-the-table.html">Doodle on the Table</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./media.html">Photos/Video/Interviews</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./contact.html">Contact</a>
+        </div>
+        <div class="col text-center">
+          <a class="btn btn-dark w-100 border" href="./faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5" style="width:60%; margin:auto;">
+      <div class="col text-center">
+        <a class="btn btn-dark w-100 border" href="./index.html">About</a>
+      </div>
+      <div class="col text-center">
+        <a class="btn btn-selected btn-dark w-100 border" href="./index_release.html">New Release!</a>
+      </div>
+    </div>
+    
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
         <!-- Album Art Image -->
-        <img src="https://www.albumartexchange.com/static/images/stone-roses.jpg" alt="Album Art" class="album-art">
+        <div id="squareImageCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://www.albumartexchange.com/static/images/stone-roses.jpg" class="d-block w-100" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/bc/Secondcomingroses.jpg" class="d-block w-100" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://byronsmuse.wordpress.com/wp-content/uploads/2015/02/the-stone-roses-13.jpg" class="d-block w-100" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="https://i.pinimg.com/736x/17/e6/21/17e6212ef5b95530f2408332959b99f7.jpg" class="d-block w-100" alt="Image 4">
+            </div>
+          </div>
+      
+          <!-- Controls: Arrows outside the carousel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#squareImageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#squareImageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
 
         <!-- Release Title -->
         <h2 class="release-title">[Your Release Title Here]</h2>
@@ -66,24 +128,26 @@
         </a>
       </div>
     </div>
-    <!-- Social Media Links -->
-    <div class="row text-center mt-4">
-      <div class="col-12">
-        <a href="https://www.instagram.com/yourprofile" target="_blank" class="icons text-light mx-2">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://www.facebook.com/yourprofile" target="_blank" class="icons text-light mx-2">
-          <i class="fab fa-facebook fa-2x"></i>
-        </a>
-        <a href="https://www.twitter.com/yourprofile" target="_blank" class="icons text-light mx-2">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://www.youtube.com/yourchannel" target="_blank" class="icons text-light mx-2">
-          <i class="fab fa-youtube fa-2x"></i>
-        </a>
-      </div>
-    </div>
+    
   </div>
+
+  <!-- Fixed footer with social media links -->
+  <footer class="fixed-bottom bg-black text-light text-center py-2">
+    <div class="container">
+      <a href="https://www.instagram.com/yourprofile" target="_blank" class="icons text-light mx-2">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.facebook.com/yourprofile" target="_blank" class="icons text-light mx-2">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a href="https://www.twitter.com/yourprofile" target="_blank" class="icons text-light mx-2">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://www.youtube.com/yourchannel" target="_blank" class="icons text-light mx-2">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

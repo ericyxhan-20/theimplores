@@ -2,6 +2,15 @@ body {
   color: #c0c0c0;
 }
 
+/* .col {
+  overflow: hidden;
+} */
+
+.btn {
+  white-space: nowrap;
+  /* text-overflow: ellipsis; */
+}
+
 .btn-dark {
   color: #c0c0c0;
   background-color: black;
@@ -16,6 +25,14 @@ body {
 .btn-selected:focus, .btn-selected:active {
   outline: none; /* Remove outline */
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5); /* Add glow effect */
+}
+
+.dropdown-navbar {
+  display: none;
+}
+
+.full-navbar {
+  display: inline;
 }
 
 .patreon-button {
@@ -50,20 +67,77 @@ body {
   padding-right: 15px;
 }
 
-.album-art {
-  max-width: 100%;
+.release-title, .release-description {
+  margin-bottom: 20px;
+}
+
+.carousel {
+  max-width: 500px;
+  margin: auto;
   height: auto;
   margin-bottom: 20px;
 }
 
-.release-title, .release-description {
-  margin-bottom: 20px;
+/* Ensure square image display */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover; /* Ensure the images cover the full area without distortion */
+}
+
+/* Remove default small Bootstrap arrow icons */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-image: none; /* Remove the default Bootstrap arrow background */
+}
+
+/* Thicker Previous Arrow */
+.carousel-control-prev-icon {
+  border: solid white;  /* Set the color of the arrow */
+  border-width: 0 0.5rem 0.5rem 0;  /* Control the thickness of the arrow */
+  display: inline-block;
+  padding: 15px;  /* Control the size of the arrow */
+  transform: rotate(135deg);  /* Rotate to create the left arrow shape */
+}
+
+/* Thicker Next Arrow */
+.carousel-control-next-icon {
+  border: solid white;  /* Set the color of the arrow */
+  border-width: 0 0.5rem 0.5rem 0;  /* Control the thickness of the arrow */
+  display: inline-block;
+  padding: 15px;  /* Control the size of the arrow */
+  transform: rotate(-45deg);  /* Rotate to create the right arrow shape */
+}
+
+/* Adjust the positioning of the arrows to be outside the carousel */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;  /* Set width for arrow container */
+}
+
+.carousel-control-prev {
+  left: -50px;  /* Position the left arrow outside the image */
+}
+
+.carousel-control-next {
+  right: -50px;  /* Position the right arrow outside the image */
+}
+
+/* Optionally, make the arrows even bigger when hovered */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  border-width: 0 0.7rem 0.7rem 0;  /* Increase thickness when hovered */
 }
 
 @media (max-width: 768px) {
   .row {
       margin-left: 0;
       margin-right: 0;
+  }
+  .dropdown-navbar {
+    display: flex;
+  }
+  .full-navbar {
+    display: none;
   }
   .album-art {
       width: 100%;
@@ -74,5 +148,18 @@ body {
   }
   .release-description {
       font-size: 1rem;
+  }
+  .carousel-item img {
+    max-width: 90%;
+    margin: auto;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 10%; /* Wider arrow area for better usability on smaller screens */
+  }
+  .carousel-control-prev {
+    left: -20px; /* Bring the left arrow closer */
+  }
+  .carousel-control-next {
+    right: -20px; /* Bring the right arrow closer */
   }
 }
