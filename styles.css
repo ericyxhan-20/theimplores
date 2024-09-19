@@ -35,7 +35,7 @@ body {
   display: inline;
 }
 
-.patreon-button {
+.btn-primary {
   background-color: #fff;
   border-color: #fff;
   color: #000;
@@ -65,6 +65,7 @@ body {
 .container-fluid {
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 80px;
 }
 
 .release-title, .release-description {
@@ -126,6 +127,38 @@ body {
 .carousel-control-prev:hover .carousel-control-prev-icon,
 .carousel-control-next:hover .carousel-control-next-icon {
   border-width: 0 0.7rem 0.7rem 0;  /* Increase thickness when hovered */
+}
+
+/* Music player styles */
+.music-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 32rem;
+}
+
+.play-btn {
+  width: 3.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: white;
+  width: 0%;
 }
 
 @media (max-width: 768px) {
