@@ -18,17 +18,18 @@
       display: flex;
       align-items: center;
     }
-
     .faq-answer {
       display: none;
       margin: 0.5rem 0 1rem 1rem;
     }
-
     .icon {
       margin-right: 0.5rem;
     }
+    .faq-title {
+      font-size: 1.4rem !important;
+    }
     /* Media Queries for larger screens */
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .faq-question {
         font-size: 1.2rem;
         margin: 1.5rem 0; /* Adjust margin for larger screens */
@@ -37,23 +38,32 @@
         font-size: 1.2rem;
         margin: 0.5rem 0 1rem 1.5rem; /* Adjust margin for answers */
       }
+      .faq-title {
+        font-size: 1.8rem !important;
+      }
     }
     @media (min-width: 992px) {
-        body {
-            font-size: 1.5rem; /* Further increase font size for desktops */
-        }
-        .faq-question {
-            margin: 2rem 0; /* Adjust margin for larger screens */
-        }
-        .faq-answer {
-            margin: 0.5rem 0 1rem 2rem; /* Adjust margin for answers */
-        }
+      body {
+          font-size: 1.5rem; /* Further increase font size for desktops */
+      }
+      .faq-question {
+          margin: 2rem 0; /* Adjust margin for larger screens */
+      }
+      .faq-answer {
+          margin: 0.5rem 0 1rem 2rem; /* Adjust margin for answers */
+      }
+      .faq-title {
+        font-size: 2.0rem !important;
+      }
     }
 
     @media (min-width: 1400px) {
       .faq-answer, .faq-question {
-          font-size: 1.6rem; /* Maximum font size for large desktops */
-        }
+        font-size: 1.6rem; /* Maximum font size for large desktops */
+      }
+      .faq-title {
+        font-size: 2.3rem !important;
+      }
     }
   </style>
 </head>
@@ -121,9 +131,9 @@
     </div>
     <div class="row w-75 mx-auto">
       <div class="container-fluid col-12">
-        <h1 class="text-center text-gray-200" style="margin:2% 0 0 0;">Frequently Asked Questions</h1>
+        <h1 class="text-center text-gray-200 faq-title" style="margin:2% 0 0 0;">Frequently Asked Questions</h1>
   
-        <div class="faq-section mx-auto w-75">
+        <div class="faq-section mx-auto col-12">
           <div class="faq-question" onclick="toggleAnswer(this)">
             <i class="fas fa-plus icon"></i> Who are The Implores?
           </div>
