@@ -17,10 +17,12 @@
       font-weight: bold;
       display: flex;
       align-items: center;
+      font-size: 1.1rem !important;
     }
     .faq-answer {
       display: none;
       margin: 0.5rem 0 1rem 1rem;
+      font-size: 1.1rem !important;
     }
     .icon {
       margin-right: 0.5rem;
@@ -43,9 +45,6 @@
       }
     }
     @media (min-width: 992px) {
-      body {
-          font-size: 1.5rem; /* Further increase font size for desktops */
-      }
       .faq-question {
           margin: 2rem 0; /* Adjust margin for larger screens */
       }
@@ -58,8 +57,13 @@
     }
 
     @media (min-width: 1400px) {
-      .faq-answer, .faq-question {
-        font-size: 1.6rem; /* Maximum font size for large desktops */
+      .faq-question {
+          margin: 2.5rem 0; /* Adjust margin for larger screens */
+          font-size: 1.5rem !important;
+      }
+      .faq-answer {
+          margin: 0.5rem 0 1rem 3.0rem; /* Adjust margin for answers */
+          font-size: 1.5rem !important;
       }
       .faq-title {
         font-size: 2.3rem !important;
@@ -130,10 +134,10 @@
       </div>
     </div>
     <div class="row w-75 mx-auto">
-      <div class="container-fluid col-12">
-        <h1 class="text-center text-gray-200 faq-title" style="margin:2% 0 0 0;">Frequently Asked Questions</h1>
+      <div class="container-fluid col">
+        <h1 class="text-center text-gray-200 faq-title">Frequently Asked Questions</h1>
   
-        <div class="faq-section mx-auto col-12">
+        <div class="faq-section mx-auto col">
           <div class="faq-question" onclick="toggleAnswer(this)">
             <i class="fas fa-plus icon"></i> Who are The Implores?
           </div>
