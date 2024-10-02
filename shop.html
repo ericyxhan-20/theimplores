@@ -36,7 +36,7 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li><a class="dropdown-item" href="./index.html">Home</a></li>
-          <li><a class="dropdown-item" href="./albums.html">Music</a></li>
+          <li><a class="dropdown-item" href="./albums.html">Music/Albums</a></li>
           <li><a class="dropdown-item" href="./news.html">News</a></li>
           <li><a class="dropdown-item active" href="#">Apparel/Merch</a></li>
           <li><a class="dropdown-item" href="./doodle-on-the-table.html">Doodle on the Table</a></li>
@@ -66,7 +66,7 @@
           <a class="btn btn-dark w-100 border" href="./index.html">Home</a>
         </div>
         <div class="col text-center">
-          <a class="btn btn-dark w-100 border" href="./albums.html">Music</a>
+          <a class="btn btn-dark w-100 border" href="./albums.html">Music/Albums</a>
         </div>
         <div class="col text-center">
           <a class="btn btn-dark w-100 border" href="./news.html">News</a>
@@ -92,7 +92,15 @@
     <div class="row w-75 mx-auto">
       <!-- Product 1 -->
       <div class="col-md-4 text-center mb-4">
-        <img src="./keychain.png" class="img-fluid mb-2" alt="Product 1">
+        <img id="mainImage" src="https://ih1.redbubble.net/image.3348434475.2948/ssrco,long_t_shirt,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1u1.jpg" class="img-fluid mb-2" alt="Keychain">
+        
+        <!-- Thumbnails for different colors -->
+        <div class="d-flex justify-content-center mb-2">
+            <img src="https://ih1.redbubble.net/image.3348434475.2948/ssrco,long_t_shirt,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1u1.jpg" class="img-thumbnail mx-1" alt="Red Keychain" width="50" onclick="changeImage('https://ih1.redbubble.net/image.3348434475.2948/ssrco,long_t_shirt,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1u1.jpg')">
+            <img src="https://ih1.redbubble.net/image.4530970432.1936/ssrco,slim_fit_t_shirt,mens,101010:01c5ca27c6,front,square_product,600x600.webp" class="img-thumbnail mx-1" alt="Blue Keychain" width="50" onclick="changeImage('https://ih1.redbubble.net/image.4530970432.1936/ssrco,slim_fit_t_shirt,mens,101010:01c5ca27c6,front,square_product,600x600.webp')">
+            <img src="https://ih1.redbubble.net/image.3348434398.2948/ssrco,triblend_tee,mens,triblend_tan,front,square_three_quarter,x1000-bg,f8f8f8.u1.jpg" class="img-thumbnail mx-1" alt="Green Keychain" width="50" onclick="changeImage('https://ih1.redbubble.net/image.3348434398.2948/ssrco,triblend_tee,mens,triblend_tan,front,square_three_quarter,x1000-bg,f8f8f8.u1.jpg')">
+        </div>
+
         <h5 class="text-light">Foreign Exotics Keychain</h5>
         <p>Brief description of the product.</p>
         <a href="https://www.patreon.com/yourpage" target="_blank" class="btn btn-primary product-button">Buy on Online Store</a>
@@ -118,23 +126,35 @@
   <footer class="fixed-bottom bg-black text-light text-center py-2">
     <div class="container">
       <a href="https://www.instagram.com/yourprofile" target="_blank" class="icons text-light mx-2">
-        <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i>
       </a>
       <a href="https://www.facebook.com/yourprofile" target="_blank" class="icons text-light mx-2">
-        <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-facebook fa-2x"></i>
       </a>
-      <a href="https://www.twitter.com/yourprofile" target="_blank" class="icons text-light mx-2">
-        <i class="fab fa-twitter fa-2x"></i>
+      <a href="https://www.spotify.com/yourprofile" target="_blank" class="icons text-light mx-2">
+          <i class="fab fa-spotify fa-2x"></i>
+      </a>
+      <a href="https://www.patreon.com/yourprofile" target="_blank" class="icons text-light mx-2">
+          <i class="fab fa-patreon fa-2x"></i>
       </a>
       <a href="https://www.youtube.com/yourchannel" target="_blank" class="icons text-light mx-2">
-        <i class="fab fa-youtube fa-2x"></i>
+          <i class="fab fa-youtube fa-2x"></i>
       </a>
-    </div>
+      <a href="https://www.twitter.com/yourprofile" target="_blank" class="icons text-light mx-2">
+          <i class="fab fa-x-twitter fa-2x"></i>
+      </a>
+    </div>  
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
+  <script>
+      function changeImage(image) {
+          document.getElementById('mainImage').src = image;
+      }
+  </script>
 </body>
 
 </html>
