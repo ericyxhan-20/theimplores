@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="styles.css">
 
   <style>
+    #mainImage1, #mainImage2 {
+      width: 300px;
+      height: 300px;
+      object-fit: cover; /* Makes the image fill the box and maintain aspect ratio */
+    }
     /* Ensures images do not exceed a specific size */  
     @media (max-width: 768px) {
       .img-fluid {
@@ -92,32 +97,36 @@
     <div class="row w-75 mx-auto">
       <!-- Product 1 -->
       <div class="col-md-4 text-center mb-4">
-        <img id="mainImage" src="https://ih1.redbubble.net/image.3348434475.2948/ssrco,long_t_shirt,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1u1.jpg" class="img-fluid mb-2" alt="Keychain">
-        
-        <!-- Thumbnails for different colors -->
+        <img id="mainImage1" src="./images/shirt1/white-front.JPG" class="img-fluid mb-2" alt="White Shirt 1 (Front)">
         <div class="d-flex justify-content-center mb-2">
-            <img src="https://ih1.redbubble.net/image.3348434475.2948/ssrco,long_t_shirt,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1u1.jpg" class="img-thumbnail mx-1" alt="Red Keychain" width="50" onclick="changeImage('https://ih1.redbubble.net/image.3348434475.2948/ssrco,long_t_shirt,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1u1.jpg')">
-            <img src="https://ih1.redbubble.net/image.4530970432.1936/ssrco,slim_fit_t_shirt,mens,101010:01c5ca27c6,front,square_product,600x600.webp" class="img-thumbnail mx-1" alt="Blue Keychain" width="50" onclick="changeImage('https://ih1.redbubble.net/image.4530970432.1936/ssrco,slim_fit_t_shirt,mens,101010:01c5ca27c6,front,square_product,600x600.webp')">
-            <img src="https://ih1.redbubble.net/image.3348434398.2948/ssrco,triblend_tee,mens,triblend_tan,front,square_three_quarter,x1000-bg,f8f8f8.u1.jpg" class="img-thumbnail mx-1" alt="Green Keychain" width="50" onclick="changeImage('https://ih1.redbubble.net/image.3348434398.2948/ssrco,triblend_tee,mens,triblend_tan,front,square_three_quarter,x1000-bg,f8f8f8.u1.jpg')">
+            <img src="./images/shirt1/white-front.JPG" class="img-thumbnail mx-1" alt="White Shirt 1 (Front)" width="50" onclick="changeImage1('./images/shirt1/white-front.JPG')">
+            <img src="./images/shirt1/beige-front.JPG" class="img-thumbnail mx-1" alt="Beige Shirt 1 (Front)" width="50" onclick="changeImage1('./images/shirt1/beige-front.JPG')">
+            <img src="./images/shirt1/blue-front.JPG" class="img-thumbnail mx-1" alt="Blue Shirt 1 (Front)" width="50" onclick="changeImage1('./images/shirt1/blue-front.JPG')">
+            <img src="./images/shirt1/white-back.JPG" class="img-thumbnail mx-1" alt="White Shirt 1 (Back)" width="50" onclick="changeImage1('./images/shirt1/white-back.JPG')">
+            <img src="./images/shirt1/beige-back.JPG" class="img-thumbnail mx-1" alt="Beige Shirt 1 (Back)" width="50" onclick="changeImage1('./images/shirt1/beige-back.JPG')">
+            <img src="./images/shirt1/blue-back.JPG" class="img-thumbnail mx-1" alt="Blue Shirt 1 (Back)" width="50" onclick="changeImage1('./images/shirt1/blue-back.JPG')">
         </div>
 
-        <h5 class="text-light">Foreign Exotics Keychain</h5>
+        <h5 class="text-light">T-Shirt 1</h5>
         <p>Brief description of the product.</p>
         <a href="https://www.patreon.com/yourpage" target="_blank" class="btn btn-primary product-button">Buy on Online Store</a>
       </div>
       <!-- Product 2 -->
       <div class="col-md-4 text-center mb-4">
-        <img src="./keychain.png" class="img-fluid mb-2" alt="Product 2">
-        <h5 class="text-light">Foreign Exotics Keychain</h5>
+        <img id="mainImage2" src="./images/shirt2/white-front.JPG" class="img-fluid mb-2" alt="White Shirt 2 (Front)">
+        
+        <div class="d-flex justify-content-center mb-2">
+          <img src="./images/shirt2/white-front.JPG" class="img-thumbnail mx-1" alt="White Shirt 2 (Front)" width="50" onclick="changeImage2('./images/shirt2/white-front.JPG')">
+          <img src="./images/shirt2/beige-front.JPG" class="img-thumbnail mx-1" alt="Beige Shirt 2 (Front)" width="50" onclick="changeImage2('./images/shirt2/beige-front.JPG')">
+          <img src="./images/shirt2/blue-front.JPG" class="img-thumbnail mx-1" alt="Blue Shirt 2 (Front)" width="50" onclick="changeImage2('./images/shirt2/blue-front.JPG')">
+          <img src="./images/shirt2/white-back.JPG" class="img-thumbnail mx-1" alt="White Shirt 2 (Back)" width="50" onclick="changeImage2('./images/shirt2/white-back.JPG')">
+          <img src="./images/shirt2/beige-back.JPG" class="img-thumbnail mx-1" alt="Beige Shirt 2 (Back)" width="50" onclick="changeImage2('./images/shirt2/beige-back.JPG')">
+          <img src="./images/shirt2/blue-back.JPG" class="img-thumbnail mx-1" alt="Blue Shirt 2 (Back)" width="50" onclick="changeImage2('./images/shirt2/blue-back.JPG')">
+        </div>
+
+        <h5 class="text-light">T-Shirt 2</h5>
         <p>Brief description of the product.</p>
-        <a href="https://link-to-online-store.com/product2" target="_blank" class="btn btn-primary product-button">Buy on Online Store</a>
-      </div>
-      <!-- Product 3 -->
-      <div class="col-md-4 text-center mb-4">
-        <img src="./keychain.png" class="img-fluid mb-2" alt="Product 3">
-        <h5 class="text-light">Foreign Exotics Keychain</h5>
-        <p>Brief description of the product.</p>
-        <a href="https://link-to-online-store.com/product3" target="_blank" class="btn btn-primary product-button">Buy on Online Store</a>
+        <a href="https://www.patreon.com/yourpage" target="_blank" class="btn btn-primary product-button">Buy on Online Store</a>
       </div>
     </div>
   </div>
@@ -125,22 +134,22 @@
   <!-- Fixed footer with social media links -->
   <footer class="fixed-bottom bg-black text-light text-center py-2">
     <div class="container">
-      <a href="https://www.instagram.com/yourprofile" target="_blank" class="icons text-light mx-2">
+      <a href="https://www.instagram.com/theimplores/" target="_blank" class="icons text-light mx-2">
           <i class="fab fa-instagram fa-2x"></i>
       </a>
-      <a href="https://www.facebook.com/yourprofile" target="_blank" class="icons text-light mx-2">
+      <a href="https://www.facebook.com/profile.php?id=61566572470711" target="_blank" class="icons text-light mx-2">
           <i class="fab fa-facebook fa-2x"></i>
       </a>
       <a href="https://www.spotify.com/yourprofile" target="_blank" class="icons text-light mx-2">
           <i class="fab fa-spotify fa-2x"></i>
       </a>
-      <a href="https://www.patreon.com/yourprofile" target="_blank" class="icons text-light mx-2">
+      <a href="https://www.patreon.com/TheImplores" target="_blank" class="icons text-light mx-2">
           <i class="fab fa-patreon fa-2x"></i>
       </a>
-      <a href="https://www.youtube.com/yourchannel" target="_blank" class="icons text-light mx-2">
+      <a href="https://www.youtube.com/channel/UCMeXZD4bnWlliJMSx3rESZg" target="_blank" class="icons text-light mx-2">
           <i class="fab fa-youtube fa-2x"></i>
       </a>
-      <a href="https://www.twitter.com/yourprofile" target="_blank" class="icons text-light mx-2">
+      <a href="https://x.com/TheImplores" target="_blank" class="icons text-light mx-2">
           <i class="fab fa-x-twitter fa-2x"></i>
       </a>
     </div>  
@@ -151,8 +160,11 @@
     crossorigin="anonymous">
   </script>
   <script>
-      function changeImage(image) {
-          document.getElementById('mainImage').src = image;
+      function changeImage1(image) {
+          document.getElementById('mainImage1').src = image;
+      }
+      function changeImage2(image) {
+          document.getElementById('mainImage2').src = image;
       }
   </script>
 </body>
